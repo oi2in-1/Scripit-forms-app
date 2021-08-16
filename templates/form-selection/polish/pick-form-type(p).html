@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<section class="form-choice-content-section form-choice-container">	
+		<h1><div class="choose-form-header">Proszę wybrać typ formularza</div></h1>
+		<!--embed src="{% static 'forms/romanian-forms/romanian-pps.pdf' %}" type="application/pdf" width="800px" height="1920px" /-->
+		<a href="../identity-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/identity-form-polish.png' %}">
+		</a>
+		
+		<a href="../employment-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/employment-form-polish.png' %}">
+		</a>
+
+		<a href="../welfare-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/welfare-form-polish.png' %}"> 		
+		</a>
+
+		<a href="../health-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/health-form-polish.png' %}">
+		</a>
+
+		<a href="../justice-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/justice-form-polish.png' %}">
+		</a>
+
+		<a href="../housing-forms-polish/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/housing-form-polish.png' %}">
+		</a>
+{% endblock %}

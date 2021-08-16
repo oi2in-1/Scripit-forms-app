@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+	<script type="text/javascript" src="{% static 'javascript/official-form.js' %}"></script>
+	<script type="text/javascript" src="{% static 'javascript/translatedForm.js' %}"></script>
+	<section class="form-choice-content-section form-choice-container">	
+		<h1><div class="choose-form-header">Personal Public Service Number (PPSN) Form</div></h1>
+		<body>
+			<iframe class="embed-margin2" 
+	        	src="{% static 'forms/english-forms/pps-official.pdf' %}" id="official-form" 
+	            	frameborder="0" style="border:0;" height=900 width=40%>
+	   		</iframe>
+
+	   		<p>
+	        	<input type="button" id="bt" onclick="print()" value="1" />
+	    	</p>
+    	</body>
+		<!--
+		<object class="embed-margin2" data="{% static 'forms/english-forms/pps-official.pdf' %}" type="application/pdf" style="min-height:70vh;width:40%"></object>
+	-->
+		<body>	
+			<iframe class="embed-margin" 
+	        	src="{% static 'forms/english-forms/english-pps.pdf' %}" id="translatedForm" 
+	            	frameborder="0" style="border:0;" height=900 width=40%>
+	   		</iframe>
+
+	   		<p>
+	        	<input type="button" id="bt" onclick="print2()" value="2" />
+	    	</p>
+    	</body>
+
+{% endblock %}

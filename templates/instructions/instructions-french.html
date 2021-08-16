@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1><div class="choose-form-header">Comment utiliser Script</div></h1>
+
+<div class="instruction-container">
+	<img class="numbers" src="{% static 'FLAGPNG/one.png' %}" style="height:12.5em;width: auto;"> 
+	<p class="text-pos" align="left">Choose the Script you require from the list of forms. </p>
+</div>
+<br>
+<br>
+<br>
+<div class="instruction-container">
+	<img class="numbers" src="{% static 'FLAGPNG/two.png' %}" style="height:12.5em;width: auto;">
+	<p class="text-pos" align="left">First Choose the form you require from the list of forms.</p>
+</div>
+<br>
+<br>
+<br>
+<div class="instruction-container">
+	<img class="numbers" src="{% static 'FLAGPNG/three.png' %}" style="height: 12.5em;width: auto;">
+	<p class="text-pos" align="left">First Choose the form you require from the list of forms.</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<a href="../french-forms/">	
+	<img class="started-button" src="{% static 'FLAGPNG/getstarted.png' %}">
+</a>
+{% endblock %}

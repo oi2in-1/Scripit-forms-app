@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<section class="form-choice-content-section form-choice-container">	
+	<script type="text/javascript" src="{% static 'javascript/dropdown.js' %}"></script>
+		<h1><div class="choose-form-header">Please choose a type of form</div></h1>
+
+		<a href="../identity-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/identity-form-image.png' %}">
+		</a>
+		<!--embed src="{% static 'forms/romanian-forms/romanian-pps.pdf' %}" type="application/pdf" width="800px" height="1920px" /-->
+		<!--
+		<img onclick="myFunction()" class="form-choice-center forms" src="{% static 'FLAGPNG/identity-form-image.png' %}">
+		<div id="myDIV">
+			<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+			<section class="form-choice-content-section form-choice-container">	
+			<h1><div class="choose-form-header-dropdown">Personal Public Service Number (PPSN) Form</div></h1>
+			<object class="embed-margin-dropdown2" data="{% static 'forms/english-forms/pps-official.pdf' %}" type="application/pdf" style="min-height:70vh;width:40%"></object>
+			<object class="embed-margin-dropdown" data="{% static 'forms/english-forms/english-pps.pdf' %}" type="application/pdf" style="min-height:70vh;width:40%"></object>
+		</div>
+		-->
+		<a href="../employment-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/employment-form-image.png' %}">
+		</a>
+
+		<a href="../welfare-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/welfare-form-image.png' %}"> 		
+		</a>
+
+		<a href="../health-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/health-form-image.png' %}">
+		</a>
+
+		<a href="../justice-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/justice-form-image.png' %}">
+		</a>
+
+		<a href="../housing-forms-english/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/housing-form-image.png' %}">
+		</a>
+{% endblock %}

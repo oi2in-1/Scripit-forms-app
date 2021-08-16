@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<section class="form-choice-content-section form-choice-container">	
+		<h1><div class="choose-form-header">Vă rugăm să alegeti un tip de formular</div></h1>
+		<!--embed src="{% static 'forms/romanian-forms/romanian-pps.pdf' %}" type="application/pdf" width="800px" height="1920px" /-->
+		<a href="../identity-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/identity-form-romanian.png' %}">
+		</a>
+		
+		<a href="../employment-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/employment-form-romanian.png' %}">
+		</a>
+
+		<a href="../welfare-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/welfare-form-romanian.png' %}"> 		
+		</a>
+
+		<a href="../health-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/health-form-romanian.png' %}">
+		</a>
+
+		<a href="../justice-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/justice-form-romanian.png' %}">
+		</a>
+
+		<a href="../housing-forms-romanian/">
+		<img class="form-choice-center forms" src="{% static 'FLAGPNG/housing-form-romanian.png' %}">
+		</a>
+
+{% endblock %}
